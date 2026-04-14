@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PAMMA Coffee | Since 2017</title>
+  <title>PAMMA Coffee | Since 2013</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   
@@ -32,8 +32,8 @@
     }
 
     .pammacoffeelogo img {
-      width: 50px;
-      height: 50px;
+      width: 55px;
+      height: 56px;
       border-radius: 50%;
       object-fit: cover;
     }
@@ -66,7 +66,7 @@
 
     .hero {
       height: 50vh;
-      background: rgba(0, 0, 0, 0.4) url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+      background-image: url("images/sunmoonlake.jpg");
       background-blend-mode: darken;
       background-size: cover;
       background-position: center;
@@ -77,6 +77,7 @@
       color: #fff;
       text-align: center;
     }
+
 
     .hero h1 {
       font-family: "Playfair Display", serif;
@@ -90,62 +91,7 @@
       max-width: 800px;
       margin: 0 auto;
     }
-.boba-cake {
-  display: flex;
-  padding-bottom: 40px;
-}
 
-.bubble-tea {
-  display: flex;
-  padding-bottom: 40px;
-}
-
-.coffee {
-  display: flex;
-  padding-bottom: 40px;
-}
-.boba-cake img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-.bubble-tea img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-.coffee img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.image-row {
-  display: flex;              
-  justify-content: center;    
-  align-items: center;        
-  gap: 40px;           
-  margin: 40px 0;            
-}
-
-.boba-cake img,
-.bubble-tea img,
-.coffee img {
-  width: 250px;
-  height: 250px;          
-  object-fit: cover; 
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.boba-cake img:hover,
-.bubble-tea img:hover,
-.coffee img:hover {
-  transform: scale(1.1);
-}
     .contact-banner {
       background: #fafaf9;
       padding: 60px 20px;
@@ -171,6 +117,41 @@
       margin-left:10px;
     }
 
+    .about-section {
+      text-align: center;
+      padding: 100px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      }
+
+    .about-section h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .about-section {
+      text-align: center;
+      padding: 60px 20px 20px 20px; /* top 60px, bottom 20px */
+      max-width: 700px;
+      margin: 10 auto;
+    }
+
+    .about-images {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px; /* small spacing above images */
+      margin-bottom: 40px;
+    }
+
+    .about-images img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+
     .menu-wrap { 
       max-width: 700px; 
       margin: 60px auto; 
@@ -184,9 +165,108 @@
       border-bottom: 1px solid #f7f7f7; 
     }
 
-    .footer-bottom {
-      background-color: #d8b596;
-      padding: 40px 60px;
+.experience-section {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.scene {
+  margin-bottom: 60px;
+}
+
+.scene h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: #d7b99e;
+  margin-bottom: 10px;
+}
+
+.scene p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.scene-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.scene-images img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.scene-images img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.footer-bottom {
+  background-color: #ffdab9;
+  padding: 40px 60px;
+  margin-bottom: 0px;
+}
+
+.view {
+  display: none;
+  min-height: 700px;
+}
+
+.view.active {
+  display: block;
+}
+
+.sub-slogan {
+  font-size: 14px;        /* smaller */
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+
+.view.active {
+  display: block;
+}
+
+.booking-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.booking-card {
+  background: #fafaf9;
+  padding: 50px 40px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.booking-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.booking-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.booking-list li {
+  margin: 12px 0;
+  color: #555;
 }
 
 .footer-container {
@@ -195,7 +275,7 @@
   align-items: flex-start;
 }
 
-.footer-left .brand .footer-address{
+.footer-left .brand .footer-address {
   font-weight: 700;
   font-family:"Playfair Display", serif;
   letter-spacing: 1px;
@@ -220,7 +300,6 @@
 .footer-right span {
   color: #6d4c41;
 }
-
   </style>
 </head>
 <body>
@@ -231,43 +310,78 @@
       <span class="logo-name">PAMMA COFFEE</span>
     </div>
 
-    <nav>
-      <button class="active" onclick="tab('home', this)">About Us</button>
-      <button onclick="tab('menu', this)">Signature Drinks</button>
-    </nav>
+   <nav>
+  <button class="active" onclick="tab('home', this)">About Us</button>
+  <button onclick="tab('experience', this)">Experience</button>
+  <button onclick="tab('menu', this)">Signature Drinks</button>
+  <button onclick="tab('booking', this)">Booking</button>
+  <button onclick="tab('visit', this)">Visit Information</button>
+</nav>
   </header>
 
+  <!-- Main Page -->
   <div id="home" class="view active">
-    <div class="hero">
-      <p style="text-transform: uppercase; font-size: 13px; letter-spacing: 3px;">《泮咖啡PAMMA COFFEE》</p>
-      <h1>Where the coffee's as warm as the welcome</h1>
-    </div>
 
-    <div class="content-block">
-      <h2 style="font-family: 'Playfair Display'; font-size: 30px; margin-bottom: 15px;">Since 2017</h2>
-      <p style="color: #555; font-size: 16px;">
-        Our scenic restaurant on the first row of Zuoying Lake, offering sunset views, coffee, and handmade desserts. 
-        A popular choice for brunch and dinner gatherings, featuring the aroma of homemade baking. 
-        Make a delicious souvenir from Kaohsiung.
-      </p>
-      <p style="color: #000000; font-weight: 200; margin-top: 20px;">
-        左營湖畔第一排景觀餐廳｜夕陽 × 咖啡 × 手作甜點<br>
-        人氣早午餐與晚餐聚會首選，自家烘焙香氣，伴手禮帶走高雄味。
-      </p>
-    </div>
+        <div class="hero">
+          <p style="text-transform: uppercase; font-size: 13px; letter-spacing: 3px;">
+            《泮咖啡PAMMA COFFEE》
+          </p>
 
-<div class="image-row">
-  <div class="boba-cake">
-    <img src="images/bobacake.jpg" alt="Boba Cake">
+          <h1>Where culture meets the lake.</h1>
+          <p class="sub-slogan">Since 2013 a lakeside salon of coffee.</p>
+        </div>
+
+        <div class="about-section">
+          <h2>What is PAMMA?</h2>
+
+          <p>「泮」源自古代學堂——泮宮。<br>
+            它象徵一個讓人聚集、學習、交流的場域。
+          </p>
+
+          <p>在蓮池潭湖畔，我們保留了一片風景。<br>
+            讓咖啡成為文化的載體，<br>
+            讓時間慢下來。
+          </p>
+        </div>
+        <div class="about-images">
+          <img src="images/bobacake.jpg">
+          <img src="images/coffee.jpg">
+          <img src="images/bubbletea.jpg">
+        </div>
   </div>
-  <div class="bubble-tea">
-    <img src="images/bubbletea.jpg" alt="Bubble Tea">
+
+  <!-- Second Page -->
+  <div id="experience" class="view">
+    <div class="experience-section">
+
+      <div class="scene">
+        <h2>Morning Light</h2>
+        <p>Brunch by the lake.</p>
+        <div class="scene-images">
+          <img src="images/morning1.jpg" alt="Morning Light 1">
+          <img src="images/morning2.jpg" alt="Morning Light 2">
+        </div>
+      
+        <h2>Afternoon Pause</h2>
+        <p>An afternoon with great view.</p>
+        <div class="scene-images">
+          <img src="images/afternoon1.jpg" alt="Afternoon Pause 1">
+          <img src="images/afternoon2.jpg" alt="Afternoon Pause 2">
+        </div>
+      
+
+        <h2>Sunset Gathering</h2>
+        <p>An evening with reflection.</p>
+        <div class="scene-images">
+          <img src="images/sunset1.jpg" alt="Sunset Gathering 1">
+          <img src="images/sunset2.jpg" alt="Sunset Gathering 2">
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="coffee">
-    <img src="images/coffee.jpg" alt="Coffee">
-  </div>
-</div>
- </div> <div id="menu" class="view">
+
+
+    <div id="menu" class="view">
     <div class="menu-wrap">
       <h2 style="text-align: center; font-family: 'Playfair Display'; color: #d7b99e; margin-bottom: 40px;">Signature Drinks  招牌飲料</h2>
       <div class="drink-item"><div>Taiwan Alishan Cafe latte 阿里山雲海拿鐵</div><div style="color:#d7b99e; font-weight:600;">$150</div></div>
@@ -284,15 +398,70 @@
     </div>
   </div>
 
+<div id="booking" class="view">
+  <div style="text-align:center; padding: 140px 20px;">
+    <h2 style="font-family: 'Playfair Display'; color:#edc5a3;">
+      Gather by the Lake.
+    </h2>
+
+    <p style="margin-top:30px;">Up to 100 seats</p>
+    <p style="color:#888; font-size:13px;">最多可容納100人</p>
+
+    <p>Sunset lake view</p>
+    <p style="color:#888; font-size:13px;">夕陽湖景</p>
+
+    <p>Custom menu design</p>
+    <p style="color:#888; font-size:13px;">客製化餐點設計</p>
+
+    <p>3-hour private booking</p>
+    <p style="color:#888; font-size:13px;">3小時包場體驗</p>
+  
+    <p style="margin-top:40px; color:#777; font-size:14px;">
+      Contact us via Facebook or phone for reservations.
+    </p>
+  </div>
+</div>
+
+<div id="visit" class="view">
+  <div class="content-block">
+    <h2 style="font-family: 'Playfair Display'; font-size: 30px; color:#d7b99e;">
+      Visit Information
+    </h2>
+
+    <div class="info-grid">
+
+      <div class="info-item">
+        <h4>📍 Location</h4>
+        <p>176號, Liantan Rd</p>
+        <p>Zuoying District</p>
+        <p>Kaohsiung City, 813</p>
+      </div>
+
+      <div class="info-item">
+        <h4>🕰 Hours</h4>
+        <p>11:00 – 20:00</p>
+      </div>
+
+      <div class="info-item">
+        <h4>🚗 Parking</h4>
+        <p>Available nearby</p>
+        <p>Partner lot at 元帝廟</p>
+      </div>
+
+      <div class="info-item">
+        <h4>📞 Contact</h4>
+        <p>07-5856868</p>
+      </div>
+
+    </div>
+  </div>
+</div>
     <footer class="footer-bottom">
   <div class="footer-container">
     <div class="footer-left">
       <p class="brand">PAMMA COFFEE</p>
       <p class="copyright">
-        2021 © Pamma Coffee. All rights reserved.
-      <p class="footer-address"></p>
-      高雄市左營區蓮潭路176號<br>
-      No. 176, Liantan Rd., Zuoying Dist., Kaohsiung City 813, Taiwan
+        Preserving a view since 2013.
       </p>
     </div>
 
